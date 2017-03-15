@@ -25,7 +25,8 @@ class GroupsController < ApplicationController
 
 	def show
 	    @group = Group.find(params[:id])
-	    @posts = @group.posts.recent.paginate(:page => params[:page], :per_page => 5)
+	   	@posts = @group.posts.recent.paginate(:page => params[:page], :per_page => 5)
+	  	#redirect_to groups_path, alert: "No such group, Please check"
 	end
 
 	def edit
@@ -71,8 +72,6 @@ class GroupsController < ApplicationController
   
     redirect_to group_path(@group)
   end
-
-    private
 
 	private 
 
