@@ -39,7 +39,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
-    autoprefixer-rails (6.5.3.1)
+    autoprefixer-rails (6.5.4)
       execjs
     bcrypt (3.1.11)
     bootstrap-sass (3.3.7)
@@ -175,6 +175,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootstrap-sass
   byebug
   coffee-rails (~> 4.2)
@@ -183,7 +184,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   puma (~> 3.0)
-  rails (~> 5.0.0, >= 5.0.0.1)
+  rails (~> 5.0.0.1)
   sass-rails (~> 5.0)
   simple_form
   spring
@@ -192,7 +193,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
-  web-console
+  web-console (>= 3.3.0)
   will_paginate
 
 BUNDLED WITH

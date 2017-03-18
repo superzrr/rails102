@@ -1,0 +1,10 @@
+  <tr>
+    <td><%= render_post_content(post) %></td>
+    <td><%= post.user.email %></td>
+    <td><%= post.created_at %></td>
+    <% if current_user == post.user %>
+    <td><%= link_to("Edit",edit_group_post_path(post.group,post)) %></td>
+    <td><%= link_to("Delete", group_post_path(post.group,post), method: :delete, data: { confirm: "Are you sure?" } )%>
+    <% end %>
+
+  </tr>
